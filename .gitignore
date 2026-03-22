@@ -6,6 +6,9 @@ __pycache__/
 *.py[cod]
 *.pyo
 
+# Models
+models/
+
 # VS Code
 .vscode/
 
