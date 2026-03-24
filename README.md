@@ -56,7 +56,10 @@ venv\Scripts\activate
 **3. Install dependencies**
 ```bash
 pip install -r requirements.txt
+pip install tensorflow
 ```
+
+> Note: `tensorflow-intel` in `requirements.txt` is a placeholder. Install `tensorflow` separately as shown above.
 
 ---
 
@@ -155,3 +158,54 @@ Real Time Face Recognition Using CNN/
 - Collect at least 100 images per person for better accuracy
 - Add an `Unknown` folder with random face images from the internet to improve unknown detection
 - Retrain the model whenever you add new people to the dataset
+
+---
+
+## License
+
+This project is licensed under the MIT License. See below for details.
+
+```
+MIT License
+
+Copyright (c) 2026 Swagnik Ganguly
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+```
+
+---
+
+## Privacy Policy
+
+- This system processes **live webcam footage** solely for the purpose of face recognition
+- **No video or audio is recorded or transmitted** to any external server or service
+- Face images saved to `detected_faces/` are stored **locally on your machine only**
+- Training data stored in `dataset/` remains **entirely under your control**
+- This software does **not collect, share, or sell** any personal data
+- It is your responsibility to obtain consent from any individuals whose face data is used for training
+
+> **Warning:** Deploying this system to recognize individuals without their knowledge or consent may violate privacy laws in your jurisdiction (e.g. GDPR, CCPA). Use responsibly and ethically.
+
+---
+
+## Copyright
+
+© 2026 Swagnik Ganguly. All rights reserved.
+
+Unauthorized copying, distribution, or modification of this project without explicit permission from the author is prohibited.

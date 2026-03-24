@@ -19,7 +19,7 @@ while True:
         count += 1
         print(f"Captured {count}")
 
-    if count >= 90:
+    if count >= 100:
         break
 
 cam.release()
